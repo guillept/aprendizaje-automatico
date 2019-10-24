@@ -13,7 +13,6 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
 
-'''
 digits = load_digits()
 
 # activation = relu por default
@@ -25,7 +24,6 @@ print(clf.score(X_test, y_test)) #testea
 # 12. Use “GridSearchCV” to find which is the best configuration using the following params
 params = {
     'activation': ['identity', 'logistic', 'tanh', 'relu'],
-    'activation': ['identity', 'logistic', 'tanh', 'relu'],
     'learning_rate_init': [.1, 0.05, 0.01, 0.005, 0.001]
 }
 
@@ -34,7 +32,7 @@ grid_search_cv.fit(X_train, y_train)
 print(grid_search_cv.best_estimator_)
 y_pred = grid_search_cv.predict(X_test)
 print("Accuracy for cancer breast is", accuracy_score(y_test, y_pred) * 100)
-'''
+
 
 '''
 MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',

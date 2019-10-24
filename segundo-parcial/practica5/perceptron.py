@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Perceptron(object):
     def __init__(self, numberAttributes, iterations=100, learningRate=0.01):
         self.iterations=iterations
